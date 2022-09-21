@@ -1,0 +1,65 @@
+def string_times(str, n):
+  return (str * n)
+
+def front_times(str, n):
+  new = ""
+  if len(str) < 3:
+    return str * n
+  
+  else:
+    new = str[0:3]
+    return new * n
+
+def string_bits(str):
+  index = 0
+  new = ""
+  for e in str:
+    new += str[index:index + 1]
+    index += 2
+  return new
+  
+def string_splosion(str):
+  index = 0
+  new = ""
+  for e in str:
+    new += str[:index + 1]
+    index += 1
+  return new
+
+def last2(str):
+  last = str[len(str)-2:]
+  count = 0
+  for e in range (len(str)-2):
+    if (str[e:e+2] == last):
+      count+=1
+  return count
+
+def array_count9(nums):
+  count = 0
+  for e in nums:
+    if (e == 9):
+      count+=1
+  return count
+
+def array_front9(nums):
+  i = 0
+  for e in nums:
+    if (e == 9 and i < 4):
+      return True
+    i+=1
+  return False
+
+
+def array123(nums):
+  i = 0
+  for e in range(len(nums)-2):
+    if (nums[e] == 1 and nums[e+1] == 2 and nums[e+2] == 3):
+      return True
+  return False
+
+def string_match(a, b):
+  count = 0
+  for e in range(len(a)-1):
+    if (a[e:e+2] == b[e:e+2]):
+      count+=1
+  return count
