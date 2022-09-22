@@ -10,7 +10,7 @@ sum_double(-1, 0) → -1
 '''
 
 def sum_double(a, b):
-  if (a == b): #checked if the two values were the same
-    return (a+b)*2 #returned double
+  if (a == b):  #checked if the two values were the same
+    return (a+b)*2  #returned double
     
   return a + b
