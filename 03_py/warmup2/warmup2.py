@@ -10,9 +10,9 @@ and is used instead of &&
 def string_times(str, n):
   return (str * n)
 
-# string_times('Hi', 2) → 'HiHi'	
-# string_times('Hi', 3) → 'HiHiHi'	
-# string_times('Hi', 1) → 'Hi'	
+print(string_times('Hi', 2))	
+print(string_times('Hi', 3))	
+print(string_times('Hi', 1))	
 
 # To create a string, you have to initalize it even if it's empty.
 def front_times(str, n):
@@ -24,9 +24,9 @@ def front_times(str, n):
     new = str[0:3]
     return new * n
   
-# front_times('Chocolate', 2) → 'ChoCho'
-# front_times('Chocolate', 3) → 'ChoChoCho'
-# front_times('Abc', 3) → 'AbcAbcAbc'
+print(front_times('Chocolate', 2))
+print(front_times('Chocolate', 3))
+print(front_times('Abc', 3))
 
 # Specfic substrings can be obtains using brackets.
 def string_bits(str):
@@ -37,9 +37,9 @@ def string_bits(str):
     index += 2
   return new
 
-# string_bits('Hello') → 'Hlo'
-# string_bits('Hi') → 'H'
-# string_bits('Heeololeo') → 'Hello'
+print(string_bits('Hello'))
+print(string_bits('Hi'))
+print(string_bits('Heeololeo'))
   
 # You cannot do ++ on python for some reason.
 def string_splosion(str):
@@ -50,9 +50,9 @@ def string_splosion(str):
     index += 1
   return new
 
-# string_splosion('Code') → 'CCoCodCode'
-# string_splosion('abc') → 'aababc'
-# string_splosion('ab') → 'aab'
+print(string_splosion('Code'))
+print(string_splosion('abc'))
+print(string_splosion('ab'))
 
 # the len() function returns the numer of character in the string
 def last2(str):
@@ -63,9 +63,9 @@ def last2(str):
       count+=1
   return count
 
-# last2('11212') → 1	
-# last2('13121311') → 0	
-# last2('1717171') → 2
+print(last2('11212'))	
+print(last2('13121311'))	
+print(last2('1717171'))
 
 # integer variables have to be initalized.
 def array_count9(nums):
@@ -75,9 +75,9 @@ def array_count9(nums):
       count+=1
   return count
 
-# array_count9([1, 9, 9]) → 2	
-# array_count9([1, 9, 9, 3, 9]) → 3		
-# array_count9([1, 2, 3]) → 0	
+print(array_count9([1, 9, 9]))
+print(array_count9([1, 9, 9, 3, 9]))		
+print(array_count9([1, 2, 3]))
 
 # You don't have to write else if the while loop tests all the cases for either True or False
 def array_front9(nums):
@@ -88,9 +88,9 @@ def array_front9(nums):
     i+=1
   return False
 
-# array_front9([1, 2, 3, 4, 5]) → False	
-# array_front9([9, 2, 3]) → True	
-# array_front9([1, 9, 9]) → True
+print(array_front9([1, 2, 3, 4, 5]))	
+print(array_front9([9, 2, 3]))	
+print(array_front9([1, 9, 9]))
 
 
 # and is used instead of &&
@@ -101,9 +101,9 @@ def array123(nums):
       return True
   return False
 
-# array123([1, 1, 2, 3, 1]) → True	
-# array123([1, 1, 2, 4, 1]) → False	
-# array123([1, 1, 2, 1, 2, 3]) → True	
+print(array123([1, 1, 2, 3, 1]))
+print(array123([1, 1, 2, 4, 1]))
+print(array123([1, 1, 2, 1, 2, 3]))
 
 # range function could be used effective to bound the function
 def string_match(a, b):
@@ -113,6 +113,6 @@ def string_match(a, b):
       count+=1
   return count
 
-# string_match('abc', 'abc') → 2	
-# string_match('abc', 'axc') → 0	
-# string_match('hello', 'he') → 1
+print(string_match('abc', 'abc'))	
+print(string_match('abc', 'axc'))	
+print(string_match('hello', 'he'))
