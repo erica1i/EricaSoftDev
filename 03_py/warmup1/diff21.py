@@ -6,6 +6,9 @@ diff21(1) → 20
 diff21(2) → 19	
 diff21(-1) → 22	
 
+DISCO: Learned something cool here. The abs function in Python as it is in Java. 
+abs(a-b) gives you the absolute value of the difference between a-b. Swag. 
+
 '''
 
 def diff21(n):
