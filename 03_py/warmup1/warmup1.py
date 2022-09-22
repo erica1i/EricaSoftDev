@@ -1,6 +1,6 @@
 '''
 Given an int n, return the absolute difference between n and 21, except return double the absolute difference if n is over 21.
-DISCO: Learned something cool here. The abs function in Python as it is in Java. 
+DISCO: Learned something cool here. The abs function in Python is as it is in Java. 
 abs(a-b) gives you the absolute value of the difference between a-b.
 '''
 
