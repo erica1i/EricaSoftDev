@@ -9,11 +9,7 @@ not_string('bad') → 'not bad'
 
 '''
 
-def not_string(str):not_string('candy') → 'not candy'	'not candy'	OK	
-not_string('x') → 'not x'	'not x'	OK	
-not_string('not bad') → 'not bad'	'not bad'	OK	
-not_string('bad') → 'not bad'	'not bad'	OK	
-
-  if str[:3] == "not":
+def not_string(str):
+  if str[:3] == "not": #if string began with not, then it would be unchanged. 
     return str
-  return "not "+str
+  return "not" + str 
