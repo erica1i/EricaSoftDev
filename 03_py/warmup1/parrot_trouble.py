@@ -1,12 +1,6 @@
 '''
 Return true if talking = true and hour is before 7 or after 20. 
 
-parrot_trouble(True, 6) → True
-parrot_trouble(True, 7) → False
-parrot_trouble(False, 6) → False	
-parrot_trouble(True, 21) → True
-parrot_trouble(False, 21) → False	
-
 '''
 
 def parrot_trouble(talking, hour):
@@ -15,3 +9,9 @@ def parrot_trouble(talking, hour):
     
   else:
     return False
+ 
+print(parrot_trouble(True, 6)) # → True
+print(parrot_trouble(True, 7)) #→ False
+print(parrot_trouble(False, 6)) #→ False	
+print(parrot_trouble(True, 21)) #→ True
+print(parrot_trouble(False, 21)) #→ False	
