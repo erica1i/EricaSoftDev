@@ -16,3 +16,8 @@ def front3(str):
     return str * 3 #if so, just copies the entire str 3 times
   front = str[0:3] #takes the first 3 chars
   return front * 3 #copies front 3 times
+
+print(front3('Java')) # → 'JavJavJav'	
+print(front3('Chocolate')) # → 'ChoChoCho'
+print(front3('abc')) # → 'abcabcabc'	
+print(front3('abcXYZ')) # → 'abcabcabc'
