@@ -8,7 +8,7 @@ monkey_trouble(False, True) → False	False
 
 '''
 def monkey_trouble(a_smile, b_smile):
-  if (a_smile) == (b_smile):
+  if (a_smile) == (b_smile): #if both are the same (smiling or not smiling) return True
     return True
     
   else:
