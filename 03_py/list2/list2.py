@@ -12,9 +12,9 @@ def count_evens(nums):
       count+=1
   return count
   
-# count_evens([2, 11, 9, 0]) → 2	
-# count_evens([2]) → 1
-# count_evens([2, 5, 12]) → 2	
+print(count_evens([2, 11, 9, 0]))
+print(count_evens([2]))
+print(count_evens([2, 5, 12]))	
 
 # there are a min and max function in python 
 def big_diff(nums):
@@ -27,9 +27,9 @@ def big_diff(nums):
     
   return (ma - mi)
   
-# big_diff([2, 3]) → 1	
-# big_diff([2, 2]) → 0	
-# big_diff([2]) → 0	
+print(big_diff([2, 3]))	
+print(big_diff([2, 2]))	
+print(big_diff([2]))
 
 # += sign could be used to add on to the original
 def centered_average(nums):
@@ -42,9 +42,9 @@ def centered_average(nums):
     s += e
   return (s - mi - ma) / (len(nums) - 2)
 
-# centered_average([4, 4, 4, 4, 5]) → 4	
-# centered_average([4, 4, 4, 1, 5]) → 4	
-# centered_average([6, 4, 8, 12, 3]) → 6		
+print(centered_average([4, 4, 4, 4, 5]))	
+print(centered_average([4, 4, 4, 1, 5]))	
+print(centered_average([6, 4, 8, 12, 3]))
 
 # sometimes else is needed, other times it's not
 def sum13(nums):
@@ -61,9 +61,9 @@ def sum13(nums):
       i+=1
   return s
 
-# sum13([5, 13, 2]) → 5	
-# sum13([0]) → 0	
-# sum13([13, 0]) → 0
+print(sum13([5, 13, 2]))	
+print(sum13([0]))	
+print(sum13([13, 0]))
 
 # A while loop can exist within a if statement within a while loop
 def sum67(nums):
@@ -84,9 +84,9 @@ def sum67(nums):
       
   return s
   
-# sum67([6, 7, 11]) → 11	11	OK	
-# sum67([11, 6, 7, 11]) → 22	22	OK	
-# sum67([2, 2, 6, 7, 7]) → 11	11	OK
+print(sum67([6, 7, 11]))	
+print(sum67([11, 6, 7, 11]))	
+print(sum67([2, 2, 6, 7, 7]))
 
 # and is used instead of &&
 def has22(nums):
@@ -99,6 +99,6 @@ def has22(nums):
     
   return False
 
-# has22([]) → False	
-# has22([3, 3, 2, 2]) → True		
-# has22([5, 2, 5, 2]) → False	
+print(has22([]))
+print(has22([3, 3, 2, 2]))		
+print(has22([5, 2, 5, 2]))
