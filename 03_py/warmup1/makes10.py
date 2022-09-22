@@ -11,6 +11,6 @@ statement if the "if" statement isn't triggered.
 '''
 
 def makes10(a, b):
-  if a == 10 or b == 10 or b + a == 10:
+  if a == 10 or b == 10 or b + a == 10: #returned True if one or their sum is 10. 
     return True
   return False
