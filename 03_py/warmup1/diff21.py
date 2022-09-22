@@ -13,7 +13,7 @@ abs(a-b) gives you the absolute value of the difference between a-b. Swag.
 
 def diff21(n):
   if n > 21:
-    return abs(21-n) * 2
+    return abs(21-n) * 2  #found absolute difference then multiplied by 2 since n is over 21
   
   else:
-    return abs(21-n)
+    return abs(21-n) #found absolute difference
