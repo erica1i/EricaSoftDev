@@ -7,6 +7,8 @@ not_string('x') → 'not x'
 not_string('not bad') → 'not bad'
 not_string('bad') → 'not bad'
 
+DISCO: First DISCO of the warmup! You can combine strings just by using the + sign. 
+
 '''
 
 def not_string(str):
