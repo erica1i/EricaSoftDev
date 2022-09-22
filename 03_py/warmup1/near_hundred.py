@@ -5,10 +5,11 @@ near_hundred(93) → True
 near_hundred(90) → True	
 near_hundred(89) → False
 near_hundred(110) → True	
+
 '''
 
 def near_hundred(n):
-  if abs(100-n) <= 10 or abs(200-n) <= 10:
+  if abs(100-n) <= 10 or abs(200-n) <= 10: #used abs to find the difference b/c it doesn't matter whether it is positive or negative difference 
     return True
   return False
 
