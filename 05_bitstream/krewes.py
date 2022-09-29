@@ -1,5 +1,5 @@
 '''
-Trio: April, Wanying, Erica
+Trio: April, Wanying, Erica, Horangahe, Pancake, Hugo
 Soft Dev
 K05 -- Random Devo and Ducky from Krewes
 2022-09-28
