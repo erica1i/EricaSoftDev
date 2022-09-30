@@ -3,9 +3,12 @@ Trio: April, Wanying, Erica, Horangahe, Pancake, Hugo
 Soft Dev
 K05 -- Random Devo and Ducky from Krewes
 2022-09-28
-time spent: 15 min 
+time spent: 1 hr 
+
 DISCO: 
+
 QCC:
+
 OPS SUMMARY:
 If krewes is empty, return ERROR
 Gets a list of the keys in the krewes
@@ -22,17 +25,40 @@ With those values we will select the corresponding ducky
 
 from random import randint
 
-krewes1 = {1:["1", "2", "3"], 2:["A", "B", "C"]}
-krewes2 = {
-    2:["NICHOLAS",  "ANTHONY",  "BRIAN",  "SAMUEL",  "JULIA",  "YUSHA",  "CORINA",  "CRAIG",  "FANG MIN",  "JEFF",  "KONSTANTIN",  "AARON",  "VIVIAN",  "AYMAN",  "TALIA",  "FAIZA",  "ZIYING",  "YUK KWAN",  "DANIEL",  "WEICHEN",  "MAYA",  "ELIZABETH",  "ANDREW",  "VANSH",  "JONATHAN",  "ABID",  "WILLIAM",  "HUI",  "ANSON",  "KEVIN",  "DANIEL",  "IVAN",  "JASMINE",  "JEFFREY", "Ruiwen"],
-    7:["DIANA",  "DAVID",  "SAM",  "PRATTAY",  "ANNA",  "JING YI",  "ADEN",  "EMERSON",  "RUSSELL",  "JACOB",  "WILLIAM",  "NADA",  "SAMANTHA",  "IAN",  "MARC",  "ANJINI",  "JEREMY",  "LAUREN",  "KEVIN",  "RAVINDRA",  "SADI",  "EMILY",  "GITAE",  "MAY",  "MAHIR",  "VIVIAN",  "GABRIEL",  "BRIANNA",  "JUN HONG",  "JOSEPH",  "MATTHEW",  "JAMES",  "THOMAS",  "NICOLE",  "Karen"],
-    8:["ALEKSANDRA",  "NAKIB",  "AMEER",  "HENRY",  "DONALD",  "YAT LONG",  "SEBASTIAN",  "DAVID",  "YUKI",  "SHAFIUL",  "DANIEL",  "SELENA",  "JOSEPH",  "SHINJI",  "RYAN",  "APRIL",  "ERICA",  "JIAN HONG",  "VERIT",  "JOSHUA",  "WILSON",  "AAHAN",  "GORDON",  "JUSTIN",  "MAYA",  "FAIYAZ",  "SHREYA",  "ERIC",  "JEFFERY",  "BRIAN",  "KEVIN",  "SAMSON",  "BRIAN",  "HARRY",  "Wanying", "Kevin"]
-}
-krewes3 = {}
-krewes4 = {1:["1"], 2:[]}
-krewes5 = {1:[], 2:[]}
+krewes_file = open("krewes.txt", "r") 
+content = krewes_file.read() #read in file and make it a string
 
-def getRandom(dictionary):
+names_dictionary = {}
+ducky_dictionary = {}
+
+def add_pd(pd, dictionary):
+    dictionary[pd] = []
+
+def rm_pd(pd, dictionary):
+    return dictionary.pop(pd)
+
+def add_stu(name, pd, dictionary):
+    periods = list(dictionary)
+    if not (pd in periods): #checks to see if the period is already in the dictionary 
+        add_pd(pd, dictionary)
+    dictionary[pd].append(name)
+    
+def rm_stu(name, pd, dictionary):
+    for e in range(len(dictionary[pd])):
+        if dictionary[pd][e] == name:
+            return dictionary[pd].pop(e)
+    return "no student with " + name + " found"
+
+def make_dictionary():
+    people = 0
+    content_list = content.split("@@@")
+    while people < len(content_list):
+        people_list = content_list[people].split("$$$")
+        add_stu(people_list[1], people_list[0], names_dictionary)
+        add_stu(people_list[2], people_list[0], ducky_dictionary)
+        people += 1
+
+def get_random_index(dictionary):
     if len(dictionary) == 0:
         return "ERROR: Dictionary has no values"       
     key = []
@@ -46,24 +72,23 @@ def getRandom(dictionary):
             key.remove(period)
         else:
             r = randint(0, len(dictionary.get(period))-1) #chooses random index of the list associated with the random key
-            k = dictionary.get(period)  #gets the list associated with the random key
             break
-    return k[r] #returns value at random index of random list
+    return [period,r]
 
-def createKrewes():
-    
+def get_random(dictionary):
+    vals = get_random_index(dictionary)
+    name_period = dictionary.get(vals[0]) 
+    return "Period " + vals[0] + " || " + name_period[vals[1]] 
 
-def addPd(pd, dictionary):
-    dictionary[pd] = []
+def get_random_double(dictionary1, dictionary2):
+    vals = get_random_index(dictionary1)
+    name_period = dictionary1.get(vals[0]) 
+    ducky_period = dictionary2.get(vals[0]) 
+    return "Period " + vals[0] + " || " + name_period[vals[1]] + " || " + ducky_period[vals[1]] #returns value at random index of random list    
 
-def rmPd(pd, dictionary):
-    return dictionary.pop(pd)
+make_dictionary()
+print(names_dictionary)
+print(ducky_dictionary)
 
-def addStu(name, pd, dictionary):
-    dictionary[pd].append(name)
-    
-def rmStu(name, pd, dictionary):
-    for e in range(len(dictionary[pd])):
-        if dictionary[pd][e] == name:
-            return dictionary[pd].pop(e)
-    return "no student with " + name + " found"
+print(get_random_double(names_dictionary, ducky_dictionary))
+print(get_random(names_dictionary))
