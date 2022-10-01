@@ -1,13 +1,16 @@
 '''
-Trio: April, Wanying, Erica, Horangahe, Pancake, Hugo
+Trio: April(horanghae), Wanying(pancake), Erica(hugo)  
 Soft Dev
 K05 -- Random Devo and Ducky from Krewes
 2022-09-28
 time spent: 1 hr 
-
 DISCO: 
+Split string with split() and its uses for it  
 
 QCC:
+How to split dictionaries
+How to import files and read it 
+How to find index of certain characters in strings 
 
 OPS SUMMARY:
 If krewes is empty, return ERROR
@@ -16,11 +19,15 @@ Randomly iterates through all the list of keys to determine whether it contains 
 When one of the keys is found to have a non-empty list, this key is chosen. 
 Choose a random index from list associated with chosen key
 Return value at the random index of the associated key.
+
 New Part: 
 Function to change string into a dictionary. 
+
 To choose ducky, we will create another dictionary with identical index values of the person it is connected with.
 Now, we will return the period and index of the person.
 With those values we will select the corresponding ducky
+
+
 '''
 
 from random import randint
@@ -51,7 +58,7 @@ def rm_stu(name, pd, dictionary):
 
 def make_dictionary():
     people = 0
-    content_list = content.split("@@@")
+    content_list = content.split("@@@") #split string into list between @@@
     while people < len(content_list):
         people_list = content_list[people].split("$$$")
         add_stu(people_list[1], people_list[0], names_dictionary)
@@ -75,16 +82,16 @@ def get_random_index(dictionary):
             break
     return [period,r]
 
-def get_random(dictionary):
+def get_random(dictionary): #for only one dictionary 
     vals = get_random_index(dictionary)
     name_period = dictionary.get(vals[0]) 
     return "Period " + vals[0] + " || " + name_period[vals[1]] 
 
-def get_random_double(dictionary1, dictionary2):
+def get_random_double(dictionary1, dictionary2): #for both dictionaries
     vals = get_random_index(dictionary1)
     name_period = dictionary1.get(vals[0]) 
     ducky_period = dictionary2.get(vals[0]) 
-    return "Period " + vals[0] + " || " + name_period[vals[1]] + " || " + ducky_period[vals[1]] #returns value at random index of random list    
+    return "Period " + vals[0] + " || " + name_period[vals[1]] + " || " + ducky_period[vals[1]] 
 
 make_dictionary()
 print(names_dictionary)
