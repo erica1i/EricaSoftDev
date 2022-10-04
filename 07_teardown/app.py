@@ -33,7 +33,7 @@ DISCO:
 QCC: 
 1. Stack in java? Is that related somehow?
 2. What does the @ sign do?
-3.Where is the name printed? Is it printed anymore? Does a name represent the link? 
+3. Where is the name printed? Is it printed anywhere? Does a name represent the link? 
 
 ...
 INVESTIGATIVE APPROACH:
