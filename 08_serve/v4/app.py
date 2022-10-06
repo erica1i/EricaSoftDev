@@ -1,7 +1,16 @@
-# Clyde 'Thluffy' Sinclair
-# SoftDev
-# Oct 2022
+'''
+Holi Goramali: Erica (hugo), Gordon (The Blueman)
+SoftDev
+v3 -- Intro to Flask
+Time: 0.1 hr
 
+DISCO:
+Prediction was right :D
+
+QCC:
+Same thing printed and linked as v3/app.py
+
+'''
 from flask import Flask
 app = Flask(__name__) #create instance of class Flask
 
