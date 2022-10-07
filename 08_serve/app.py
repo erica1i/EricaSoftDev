@@ -35,6 +35,6 @@ def choose_occupations():
 def hello_world():
     print(__name__)
     occupation = choose_occupations()
-    return 
+    return occupation
 
 app.run()
