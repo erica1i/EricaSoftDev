@@ -1,45 +1,40 @@
 '''
-JeLifish Trio: Jian Hong Li (JHL), Verit Li (Nibbles), Erica Li (Hugo)
+Holi Goramali: Erica (Hugo), Gordon (The Blueman)
 Soft Dev
-K07 -- Intro to Flask
-2022-10-03
+K08 Serve - Creating Flask 
+2022-10-07
 time spent:
 
 '''
-
+import random
 from flask import Flask
 
-app = Flask(__name__) # Q0: Where have you seen similar syntax in other langs?
-                          # When declaring/intiating new objects (ie Stack<Integer> = new Stack())
+app = Flask(__name__) 
+occupations_file = open("occupations.csv", "r")
+content = occupations_file.read()
 
-app.route("/") # Q1: What points of reference do you have for meaning of '/'?
-                    # In python, '/' continues the next line to the current line
-                    # The '/' indicates going into a new route
-def hello_world():
-    print(__name__) # Q2: Where will this print to? Q3: What will it print?
-                    # It printed to the terminal itself and printed a new site/link.
+def choose_occupations():
+    library = {"Job Class":[],
+           "Percentage":[]
+                }
+    new_content = content.split('\n')
+    temp = []
+    for i in range(len(new_content)-1):
+        temp += (new_content[i].rsplit(",",1))
+
+    for i in range(2,len(temp)-2,2):
+        library["Job Class"].append(temp[i])
+        library["Percentage"].append(float(temp[i+1]))
     
-    return "No hablo queso!"  # Q4: Will this appear anywhere? How u know?
-                                # "No hablo queso!" appeared on the screen when you clicked the link printed.
-                                #  I knew this because I downloaded the Flask package and was able to print out
-                                #  the proper link and clicked on it
+    options = library["Job Class"]
+    option_weights = library["Percentage"]
+    o = (random.choices(options, weights=option_weights))
+    return o
 
-app.run()  # Q5: Where have you seen similar constructs in other languages?
-            # Java!
+@app.route("/") 
+def hello_world():
+    print(__name__)
+    occupation = choose_occupations()
+    return 
 
-
-'''
-DISCO:
-- Flask will print/link links to new sites/pages
-
-QCC: 
-1. Stack in java? Is that related somehow?
-2. What does the @ sign do?
-3. Where is the name printed? Is it printed anywhere? Does a name represent the link? 
-
-...
-INVESTIGATIVE APPROACH:
-<Your concise summary of how
- you and your team set about
- "illuminating the cave of ignorance" here...>
-'''
+app.run()
