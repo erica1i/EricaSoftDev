@@ -4,13 +4,12 @@ SoftDev
 v2 -- Intro to Flask
 Time: 0.1 hr
 
-DISCO:
-QCC:
+PREDICTION:
 It will print "about to print __name__..." in the terminal and then everything else
-will be the same as the other app.py in v0. 
+will be the same as the other app.py in v0.
 
 EDITED:
-It only printed "about to print__name__..." after I clicked the link to the site. 
+It only printed "about to print__name__..." after I clicked the link to the site.
 '''
 
 from flask import Flask
@@ -23,4 +22,3 @@ def hello_world():
     return "No hablo queso!"
 
 app.run()
-

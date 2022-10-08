@@ -4,12 +4,11 @@ SoftDev
 v3 -- Intro to Flask
 Time: 0.1 hr
 
-DISCO:
-Prediction was right :D
-
-QCC:
+PREDICTION:
 Same thing printed and linked as v3/app.py
 
+EDITED:
+Prediction was right :D
 '''
 from flask import Flask
 app = Flask(__name__) #create instance of class Flask
