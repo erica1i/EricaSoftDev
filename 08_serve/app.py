@@ -3,7 +3,7 @@ Holi Goramali: Erica (Hugo), Gordon (The Blueman)
 Soft Dev
 K08 Serve - Creating Flask
 2022-10-07
-time spent:
+time spent: 1.5 hr
 
 DISCO:
 1. <br/> allows a line break
