@@ -1,9 +1,14 @@
-# Clyde 'Thluffy' Sinclair
-# SoftDev
-# Oct 2022
+'''
+Holi Goramali: Erica (Hugo), Gordon (The Blueman)
+Soft Dev
+K09 Flask-Static 
+2022-10-11
+time spent:
 
-# DEMO 
-# basics of /static folder
+DISCO:
+
+QCC:
+'''
 
 from flask import Flask
 app = Flask(__name__) 
