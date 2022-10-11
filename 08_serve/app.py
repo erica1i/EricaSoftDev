@@ -8,8 +8,7 @@ time spent: 1.5 hr
 DISCO:
 1. <br/> allows a line break
 2. app.debug enable auto-reload upon code change
-3. @app.route() must be after all the functions or else the site
-will not generate
+3. @app.route() must be after all the functions or else the site will not generate
 
 QCC:
 How can you change up the color generated on the site?
