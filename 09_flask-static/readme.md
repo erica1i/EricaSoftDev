@@ -1,5 +1,6 @@
 ## Flask() is a module.
-"__name__" is a special Python variable with the value of "__main__". 
+- "__name__" is a special Python variable with the value of "__main__". 
+- Flask is more intended for dynamic content
 
 ## WEB SERVERS VS. WEB BROWERS 
 - Web Browswers is software that allow the users to broswe the web
