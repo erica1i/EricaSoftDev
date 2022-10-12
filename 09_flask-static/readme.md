@@ -1,6 +1,6 @@
-##Flask() is a module.
+## Flask() is a module.
 
-##__name__ is a special Python variable with the value of __main__. 
+## __name__ is a special Python variable with the value of __main__. 
 
 ## WEBSERVERS VS. WEBBROWERS 
 - Web Browswers is software that allow the users to broswe the web
