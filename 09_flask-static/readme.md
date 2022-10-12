@@ -13,5 +13,6 @@ the page does not change anything about the actual server itself.
 
 ## Flask Serving Staticly 
 - In order for Flask to even serve the html files staticly, app.py must first be run
+- The moment you quit app.py, static/foo(foo.html, fixie.html) is no longer connected to the server
 - static/foo.html serves up text on a new page
 - static/foo serves up a download
