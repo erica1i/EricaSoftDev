@@ -1,9 +1,9 @@
 '''
 Holi Goramali: Erica (Hugo), Gordon (The Blueman)
 Soft Dev
-K09 Flask-Static 
+K09 Flask-Static
 2022-10-11
-time spent:
+time spent: 1 hr
 
 DISCO: The web server serves the text in html.
 <head> text here </head> changes the name of the tab to whatver is inside head.
@@ -11,9 +11,9 @@ QCC:
 '''
 
 from flask import Flask
-app = Flask(__name__) 
+app = Flask(__name__)
 
-@app.route("/")       
+@app.route("/")
 def hello_world():
     print("the __name__ of this module is... ")
     print(__name__)

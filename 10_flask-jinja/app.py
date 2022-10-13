@@ -1,6 +1,10 @@
-# Clyde 'Thluffy' Sinclair
-# SoftDev
-# Oct 2022
+'''
+Holi Goramali: Erica (hugo), Gordon (The BlueMan)
+10_flask-jinja - Using templates
+SoftDev
+2022-10-13
+time spent: 1 hr
+'''
 
 from flask import Flask, render_template #Q0: What will happen if you remove render_template from this line? (log your prediction before you pull the trigger...)
 app = Flask(__name__)
