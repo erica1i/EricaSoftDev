@@ -9,7 +9,8 @@ authenticate():
 - returns Waaaa hooo HAAAh on the page
 
 ## Front-End and Back-End
-- Front End: When you submit the form, there will be a form tag of /auth. Back-End: the app.route also have "/auth" This is one of the linkages
+- Front End: When you submit the form, there will be a form tag of /auth.
+- Back-End: the app.route also have "/auth" This is one of the linkages
 
 ## GET & POST
 - Before uncommenting GET & Post:
@@ -28,10 +29,11 @@ In the first "function" (??):
 
 In the second "function" (??):
 - request.args prints out ImmutableMultiDict([('username', 'eli30'), ('sub1', 'Submit')])
-        - It involves the two things the user had to interact
+- It involved the two things the user had to interact
 - request.args['username'] printed out the username entered by the user
 
 ## Thoughts
 - Default method is always GET
 - POST cannot work without GET
 - POST is possibly arbitrary?
+- request.args[] returns the arguments the user enters and is interactive 
