@@ -1,8 +1,8 @@
 '''
-Holi Goramali: Erica (hugo), Gordon (The BlueMan)
-11_flask-forms - Using forms
+Henali: Erica (hugo), Henry (e), Aahan (Spikes)
+12_flask-forms - Figuring out POST
 SoftDev
-2022-10-14
+2022-10-17
 time spent: 0.5 hr
 '''
 
@@ -64,7 +64,7 @@ def authenticate():
     print("FORMS")
     print(request.form)
     if request.method == 'POST':
-        return "Waaaa hooo HAAAH"  #response to a form submission
+        return "Hello "+ (request.form.get('username')) + '\n' + "Request Method Used: "+request.method+ "\n" + "GET stores info we collect from one place. POST puts the info in another place. GET & POST syntaxes are different (Disclaimer: none of my may be correct. We are not liable for any complications that may result from this information" #response to a form submission
 
 
 
