@@ -3,7 +3,7 @@ Holi Goramali: Erica (hugo), Gordon (The BlueMan)
 11_flask-forms - Using forms
 SoftDev
 2022-10-14
-time spent: 
+time spent: 0.5 hr
 '''
 
 from flask import Flask             #facilitate flask webserving
@@ -20,7 +20,7 @@ app = Flask(__name__)    #create Flask object
 trioTASK:
 ~~~~~~~~~~~ BEFORE RUNNING THIS, ~~~~~~~~~~~~~~~~~~
 ...read for understanding all of the code below.
-Some will work as written; other sections will not. 
+Some will work as written; other sections will not.
 TASK: Predict which...
 Devise some simple tests you can run to "take apart this engine," as it were.
 Execute your tests.
@@ -32,18 +32,18 @@ PROTIP: Insert your own in-line comments
    understand what is going on.
 '''
 
-@app.route("/" , methods = [])
+@app.route("/" , methods = ['GET', 'POST'])
 def disp_loginpage():
     print("\n\n\n")
     print("***DIAG: this Flask obj ***")
-    print(app)
+    print(app) #prints <Flask 'app' >
     print("***DIAG: request obj ***")
-    print(request)
+    print(request) #prints <Request 'http://127.0.0.1:5000/' [GET]>
     print("***DIAG: request.args ***")
-    print(request.args)
-    #print("***DIAG: request.args['username']  ***")
-    #print(request.args['username'])
-    print("***DIAG: request.headers ***")
+    print(request.args) #prints ImmutableMultiDict([])
+    print("***DIAG: request.args['username']  ***")
+    # print(request.args['username']) #ERROR
+    # print("***DIAG: request.headers ***") #ERROR
     print(request.headers)
     return render_template( 'login.html' )
 
@@ -52,20 +52,20 @@ def disp_loginpage():
 def authenticate():
     print("\n\n\n")
     print("***DIAG: this Flask obj ***")
-    print(app)
+    print(app) #prints <Flask 'app'>
     print("***DIAG: request obj ***")
-    print(request)
+    print(request) #prints <Request 'http://127.0.0.1:5000/auth?username=eli30&sub1=Submit' [GET]>
     print("***DIAG: request.args ***")
-    print(request.args)
-    #print("***DIAG: request.args['username']  ***")
-    #print(request.args['username'])
+    print(request.args) #prints ImmutableMultiDict([('username', 'eli30'), ('sub1', 'Submit')])
+    print("***DIAG: request.args['username']  ***")
+    print(request.args['username']) #prints eli30
     print("***DIAG: request.headers ***")
     print(request.headers)
     return "Waaaa hooo HAAAH"  #response to a form submission
 
 
-    
+
 if __name__ == "__main__": #false if this file imported as module
     #enable debugging, auto-restarting of server when this file is modified
-    app.debug = True 
+    app.debug = True
     app.run()
