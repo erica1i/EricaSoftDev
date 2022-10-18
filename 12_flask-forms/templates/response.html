@@ -21,23 +21,28 @@
 <html>
 
   <head>
-    <title> LOGIN PAGE </title>
+    <title> HELLO USER & BLURB </title>
   </head>
 
   <body>
     <h1>
-      Welcome, Travelers of the Intertoobz!
+      Hi {{username}} :)
     </h1>
 
 
     <h3>
-      Enter your username below to proceed.
+      Blurb
     </h3>
-    <form method = "POST" action="/auth">
-      <input type="text" name="username">
-      <input type="submit" name="sub1">
-    </form>
-    <br>
+    Request Method Used: {{method}}
+    <br> 
+    
+    GET stores info we collect from one place. POST puts the info in another place. 
+    GET & POST syntaxes are different 
+    
+    <br> 
+    (Disclaimer: none of this may be correct. 
+    We are not liable for any complications that may result from this information.)
+
   </body>
 
 </html>

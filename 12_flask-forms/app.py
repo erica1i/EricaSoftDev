@@ -64,8 +64,7 @@ def authenticate():
     print("FORMS")
     print(request.form)
     if request.method == 'POST':
-        return "Hello "+ (request.form.get('username')) + '\n' + "Request Method Used: "+request.method+ "\n" + "GET stores info we collect from one place. POST puts the info in another place. GET & POST syntaxes are different (Disclaimer: none of my may be correct. We are not liable for any complications that may result from this information" #response to a form submission
-
+        return render_template( 'response.html', username = request.form.get('username'), method = request.method)
 
 
 if __name__ == "__main__": #false if this file imported as module
