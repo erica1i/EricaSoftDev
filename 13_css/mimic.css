@@ -32,7 +32,8 @@ h2,h4{
 }
 .white{
     color: lightgray;
-    width: 200px;
+    margin-top: 0;
+    width: 100px;
 }
 
 .copyright{
