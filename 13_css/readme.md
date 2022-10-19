@@ -1,10 +1,10 @@
 # Team Henali
-## SoftDev
-## K13 -- mimic
-## 10-18-2022
-## time spent: 1 hr
+SoftDev
+K13 -- mimic
+10-18-2022
+time spent: 1 hr
 
-### Kewl Stuff
+## Kewl Stuff
 1. width for tables sets a size that each row/column will be
 2. YOu need to use semicolons for multiple style stuff in css
 2.5 You also need colons not equals signs for assigning attribute
