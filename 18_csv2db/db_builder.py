@@ -13,6 +13,8 @@ DISCO:
 - students_dict is an object of Dictionary --> not a dictionary itself bc we don't get rid of the new lines (??)
 
 QCC: 
+- bassnectar! 
+- tokimonsta
 
 '''
 
