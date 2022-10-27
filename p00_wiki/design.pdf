@@ -1,0 +1,24 @@
+HENALI's DESIGN DOCUMENT
+Erica (hugo), Henry (e), Aahan(spikes)
+
+Assignment:
+https://www.stuycs.org/softdev-mykolyk/1970/01/02/p00.html 
+Create a webapp called a "wiki" 
+
+Program Components: 
+1. html template for a standard information page
+2. html template for the home page
+3. database to store plain text & information 
+4. form within home page that sends the user to their desired information page
+5. back button to return to home page for every page
+6. python files: 
+        - one for to make the tables for the database
+        - one for the Flask web server
+
+Component Explanations: 
+
+
+Tasks
+- Erica:
+- Henry:
+- Aahan: 
