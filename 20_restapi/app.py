@@ -6,13 +6,17 @@ Soft Dev
 time spent:
 '''
 
-from flask import Flask, session, request, render_template, redirect, url_for
+from flask import Flask, render_template
+import urllib.request, json
 
 app = Flask(__name__)
-app.secret_key = 'foo'
 
-@app.route("/") #, methods = ['POST'])
-def main page(): 
-    if 'username' in session:
-        return render_template('welcome.html', username=session['username'])
-    return render_template('login.html')
+@app.route("/") #, methods = ['GET'])
+def main(): 
+    key = (open('key_nasa.txt')).read()
+    url = "https://api.nasa.gov/planetary/apod?api_key=" + key
+    json_url = urllib.request.urlopen(url)
+
+if __name__ == "__main__":
+    app.debug = True
+    app.run(port=2528)
