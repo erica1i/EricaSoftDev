@@ -19,6 +19,7 @@ with open('key_nasa.txt') as f:
 nasa_url = "https://api.nasa.gov/planetary/apod?api_key=" + key
 print(nasa_url) #prints the nasa_url with key to the console
 res = requests.get(nasa_url) 
+json = res.json()
 pic_url = json["url"] #finds the key named url in the json file 
 
 @app.route("/")
