@@ -1,0 +1,12 @@
+stevejobsghost: Verit Li (Nibbles), Erica Li (Hugo)
+K24 - Testing out Foundation Features
+Soft Dev
+2022-11-30
+time spent: 1.0 hr
+
+DISCO: 
+*class top-bar (Foundation) replaces class nav-bar (Bootstrap)
+*dropdown menu requires JS download unlike Bootstrap
+
+QCC:
+*what's the use of data-dropdown-menu? removing it doesn't appear to change anything?
