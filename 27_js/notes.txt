@@ -12,7 +12,7 @@ DISCO
 
 QCC
 -----------------------------------------------------------------
-* Why...?
+* What was the point of testing sheme?
 * Huh?
 * Teh whah now?
 * ...
