@@ -1,4 +1,4 @@
-Team Phantom Tollbooth :: Clyde Sinclair, Fierce Dragon
+Team iHeartAI :: Erica, Nada
 SoftDev pd0
 K27 -- Basic functions in JavaScript
 2023-04-03t
