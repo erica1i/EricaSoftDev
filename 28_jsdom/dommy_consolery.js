@@ -1,25 +1,12 @@
 /*
-   your PPTASK:
-   
-   Test drive each bit of code in this file,
-    and insert comments galore, indicating anything
-     you discover,
-    	have questions about,
-    		or otherwise deem notable.
-    		
-    		Write with your future self or teammates in mind.
-    		
-    		If you find yourself falling out of flow mode, consult 
-    		other teams
-    		MDN
+- open index.html on FireFox
+- open console 
 
-   A few comments have been pre-filled for you...
-   
-   (delete this block comment once you are done)
+
 */
 
 // Team iHeartAI :: Nada Hameed, Erica Li 
-// SoftDev pd0
+// SoftDev pd2
 // K28 -- Getting more comfortable with the dev console and the DOM
 // 2023-04-05w
 // --------------------------------------------------
@@ -34,6 +21,7 @@ var j = 20;
 
 
 //assign an anonymous fxn to a var
+//to test: console.log(f(x)) with x being any number 
 var f = function(x) {
   var j=30;
   return j+x;
@@ -41,6 +29,11 @@ var f = function(x) {
 
 
 //instantiate an object
+//to test name: console.log(o.name)
+//to test age: console.log(o.age)
+//to test items: console.log(o.items) --> 
+//to test morestuff: console.log(o.morestuff)
+//to test func: console.log(o.func(x)) with x being any number
 var o = { 'name' : 'Thluffy',
           age : 1024,
           items : [10, 20, 30, 40],
