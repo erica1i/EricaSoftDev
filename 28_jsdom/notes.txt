@@ -1,0 +1,15 @@
+DOM VISUALIZER DOCUMENTATION:
+bit.ly/api_dom 
+
+DOM
+- stored in memory
+- tree representation of a webpage
+- visualization
+- named components
+- JS dervied most of its utility form its ability to interact with HTML, XML documents
+- an API for interacting with HTML 
+
+No built in I/O. There is no file system. 
+DOM is its "cradle". 
+
+console.log() displayes a string in the console. 

@@ -18,7 +18,7 @@
    (delete this block comment once you are done)
 */
 
-// Team Phantom Tollbooth :: Clyde Sinclair, Fierce Dragon 
+// Team iHeartAI :: Nada Hameed, Erica Li 
 // SoftDev pd0
 // K28 -- Getting more comfortable with the dev console and the DOM
 // 2023-04-05w
