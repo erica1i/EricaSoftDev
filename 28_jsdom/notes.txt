@@ -13,3 +13,6 @@ No built in I/O. There is no file system.
 DOM is its "cradle". 
 
 console.log() displayes a string in the console. 
+
+about console:
+- displays changes upon reload

@@ -1,0 +1,22 @@
+;// Team Hair Investment Uncles :: Daniel He, Justin Mohabir, Sir, Alfred
+SoftDev pd2
+// K28 -- Getting more comfortable with the dev console and the DOM
+2023-04-03t
+
+DISCO
+-----------------------------------------------------------------
+* You can add variables of different types together
+  - Adding a number to null will give NaN
+* There are three ways to make functions in js
+* If you type a function without () the expanded function will print
+* Functions with no return value return undefined
+* function can be stored in dictionaries/lists and can be called with name['key'](input)
+* getElementById("input") interacts with the <ol id="input"> tag in the html file
+* The color on the bottom gets priority
+=================================================================
+
+QCC
+-----------------------------------------------------------------
+* What does innerHTML do?
+* Why is stripe() able to work after red() is used but red() does not work after stripe() is used?
+=================================================================
