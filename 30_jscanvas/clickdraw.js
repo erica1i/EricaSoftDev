@@ -16,7 +16,7 @@ var toggleMode = (e) => {
     }
     else{
         mode = "rect"
-        bToggler.innerHTML = "Rect"
+        bToggler.innerHTML = "Rectangle"
     }
 }
 
@@ -26,7 +26,7 @@ var drawRect = function(e) {
     console.log("mouseclick registered at ", mouseX, mouseY);
     
     ctx.beginPath()
-    ctx.fillStyle = 'turquoise'
+    ctx.fillStyle = 'purple'
     ctx.strokeRect(mouseX, mouseY,50,140)
     ctx.fillRect(mouseX, mouseY,50,140)
     ctx.stroke()
@@ -39,7 +39,7 @@ var drawCircle = (e) => {
     console.log("mouseclick registered at ", mouseX, mouseY);
 
     ctx.beginPath()
-    ctx.fillStyle = 'yellow'
+    ctx.fillStyle = 'red'
     ctx.arc(mouseX, mouseY, 40, 0, 2 * Math.PI, false)
     ctx.fill()
     ctx.stroke()
