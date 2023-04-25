@@ -1,0 +1,16 @@
+Team Wired Creations :: William Guo, Craig Chen
+SoftDev pd2
+K30 -- Clickdraw
+2023-04-24m
+
+DISCO/ JS code explainations
+-----------------------------------------------------------------
+* clearRect(x, y, width, height) -> clears the canvas
+* fillStyle() = 'color' -> change coloring of fill
+* strokeStyle() -> change coloring of outline/stroke
+* beginPath() -> similar to pen down in processing where it allows user to begin drawing
+* arc(x, y, radius, start-angle, end-angle, (bool)counterclockwise?)
+* fill() -> fill in shape
+* stroke() -> pen up? 
+* offsetX, offsetY -> mouseX, mouseY
+================================================================
