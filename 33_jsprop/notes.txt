@@ -1,0 +1,20 @@
+events:
+- triggered by user action
+- triggered directly in code
+- dom elements can be set up to listen for events and respond to them
+- nested elements
+    - if a parent element receives the same event as child elements, the
+    processing order follows bubble and capture
+
+bubble and capture phases in js:
+
+bubble:
+- event bubbling: describes how nested elements' events are handled
+- parent element: encompassing element
+- event goes from most specific to least specific element
+- all events are run
+--> stopPropagation() prevents the event from moving on to the next element (less specific)
+
+capture:
+- event goes from least specific to most specific element
+- capture is false on default, so you have to specify capture as true
